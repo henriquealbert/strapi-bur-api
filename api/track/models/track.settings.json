@@ -1,0 +1,52 @@
+{
+  "kind": "collectionType",
+  "collectionName": "tracks",
+  "info": {
+    "name": "Track",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "mix_name": {
+      "type": "string"
+    },
+    "remixers": {
+      "type": "component",
+      "repeatable": false,
+      "component": "artist.remixers"
+    },
+    "genre": {
+      "type": "enumeration",
+      "enum": [
+        "house",
+        "tech_house",
+        "deep_house"
+      ]
+    },
+    "url": {
+      "type": "string"
+    },
+    "ISRC": {
+      "type": "string"
+    },
+    "EAN_UPC": {
+      "type": "string"
+    },
+    "artist": {
+      "model": "artist",
+      "via": "tracks"
+    },
+    "release": {
+      "via": "tracks",
+      "model": "release"
+    }
+  }
+}

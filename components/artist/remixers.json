@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_artist_remixers",
+  "info": {
+    "name": "remixers",
+    "icon": "music",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "artists": {
+      "unique": true,
+      "collection": "artist"
+    }
+  }
+}

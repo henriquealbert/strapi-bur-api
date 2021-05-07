@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_social_social_links",
+  "info": {
+    "name": "Social links",
+    "icon": "link"
+  },
+  "options": {},
+  "attributes": {
+    "instagram": {
+      "type": "string"
+    },
+    "soundcloud": {
+      "type": "string"
+    },
+    "spotify": {
+      "type": "string"
+    },
+    "beatport": {
+      "type": "string"
+    },
+    "youtube": {
+      "type": "string"
+    }
+  }
+}

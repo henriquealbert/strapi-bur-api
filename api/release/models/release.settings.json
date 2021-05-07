@@ -1,0 +1,85 @@
+{
+  "kind": "collectionType",
+  "collectionName": "releases",
+  "info": {
+    "name": "Release",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "date": {
+      "type": "date"
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "single",
+        "ep",
+        "album"
+      ]
+    },
+    "licensing_usage": {
+      "type": "boolean"
+    },
+    "description": {
+      "type": "text"
+    },
+    "artwork": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "produced_by": {
+      "type": "string"
+    },
+    "vocalist": {
+      "type": "string"
+    },
+    "artist": {
+      "model": "artist",
+      "via": "releases"
+    },
+    "all_royalties": {
+      "type": "boolean"
+    },
+    "term_contract": {
+      "type": "boolean"
+    },
+    "status": {
+      "type": "enumeration",
+      "enum": [
+        "analise",
+        "aprovado",
+        "corrigir",
+        "negado",
+        "lancado"
+      ]
+    },
+    "tracks": {
+      "via": "release",
+      "collection": "track"
+    },
+    "catalog": {
+      "type": "string"
+    },
+    "user": {
+      "via": "releases",
+      "plugin": "users-permissions",
+      "model": "user"
+    }
+  }
+}

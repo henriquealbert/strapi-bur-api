@@ -1,0 +1,57 @@
+{
+  "kind": "collectionType",
+  "collectionName": "artists",
+  "info": {
+    "name": "Artist",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "label_artist",
+        "guest_remixer"
+      ]
+    },
+    "avatar": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "description": {
+      "type": "text"
+    },
+    "social_links": {
+      "type": "component",
+      "repeatable": false,
+      "component": "social.social-links"
+    },
+    "releases": {
+      "via": "artist",
+      "collection": "release"
+    },
+    "tracks": {
+      "via": "artist",
+      "collection": "track"
+    },
+    "user": {
+      "via": "artists",
+      "plugin": "users-permissions",
+      "model": "user"
+    }
+  }
+}
