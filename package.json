@@ -7,23 +7,25 @@
     "develop": "strapi develop",
     "start": "strapi start",
     "build": "strapi build",
-    "strapi": "strapi"
+    "strapi": "strapi",
+    "update": "yarn upgrade-interactive --latest"
   },
   "devDependencies": {},
   "dependencies": {
-    "knex": "0.21.18",
-    "sqlite3": "5.0.0",
-    "strapi": "3.6.1",
-    "strapi-admin": "3.6.1",
-    "strapi-connector-bookshelf": "3.6.1",
-    "strapi-plugin-content-manager": "3.6.1",
-    "strapi-plugin-content-type-builder": "3.6.1",
-    "strapi-plugin-email": "3.6.1",
-    "strapi-plugin-graphql": "3.6.1",
-    "strapi-plugin-i18n": "3.6.1",
-    "strapi-plugin-upload": "3.6.1",
-    "strapi-plugin-users-permissions": "3.6.1",
-    "strapi-utils": "3.6.1"
+    "knex": "0.95.5",
+    "pg": "^8.6.0",
+    "sqlite3": "5.0.2",
+    "strapi": "3.6.2",
+    "strapi-admin": "3.6.2",
+    "strapi-connector-bookshelf": "3.6.2",
+    "strapi-plugin-content-manager": "3.6.2",
+    "strapi-plugin-content-type-builder": "3.6.2",
+    "strapi-plugin-email": "3.6.2",
+    "strapi-plugin-graphql": "3.6.2",
+    "strapi-plugin-i18n": "3.6.2",
+    "strapi-plugin-upload": "3.6.2",
+    "strapi-plugin-users-permissions": "3.6.2",
+    "strapi-utils": "3.6.2"
   },
   "author": {
     "name": "A Strapi developer"
