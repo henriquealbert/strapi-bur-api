@@ -59,13 +59,31 @@
       "plugin": "users-permissions",
       "configurable": false
     },
-    "artists": {
-      "collection": "artist",
-      "via": "user"
+    "artist_name": {
+      "type": "string",
+      "unique": true
+    },
+    "avatar": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "biography": {
+      "type": "text"
+    },
+    "social_links": {
+      "type": "component",
+      "repeatable": false,
+      "component": "social.social-links"
     },
     "releases": {
-      "collection": "release",
-      "via": "user"
+      "via": "user",
+      "collection": "release"
     }
   }
 }

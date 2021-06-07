@@ -49,10 +49,6 @@
     "vocalist": {
       "type": "string"
     },
-    "artist": {
-      "model": "artist",
-      "via": "releases"
-    },
     "all_royalties": {
       "type": "boolean"
     },
@@ -80,6 +76,9 @@
       "via": "releases",
       "plugin": "users-permissions",
       "model": "user"
+    },
+    "notes": {
+      "type": "text"
     }
   }
 }
