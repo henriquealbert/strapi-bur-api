@@ -2,7 +2,7 @@
   "name": "api-strapi",
   "private": true,
   "version": "1.0.0",
-  "description": "A Strapi application",
+  "description": "Burn Up Records API",
   "scripts": {
     "dev": "strapi develop",
     "start": "strapi start",
@@ -29,7 +29,7 @@
     "strapi-utils": "3.6.5"
   },
   "author": {
-    "name": "A Strapi developer"
+    "name": "Henrique Albert Schmaiske"
   },
   "strapi": {
     "uuid": "085963fc-0b2b-4851-8d0e-1b4fc0f4ea41"
