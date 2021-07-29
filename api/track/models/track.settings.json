@@ -18,14 +18,6 @@
     "mix_name": {
       "type": "string"
     },
-    "genre": {
-      "type": "enumeration",
-      "enum": [
-        "house",
-        "tech_house",
-        "deep_house"
-      ]
-    },
     "url": {
       "type": "string"
     },
@@ -43,6 +35,9 @@
       "type": "string"
     },
     "remixer_name": {
+      "type": "string"
+    },
+    "genre": {
       "type": "string"
     }
   }
